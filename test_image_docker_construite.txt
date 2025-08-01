@@ -1,10 +1,9 @@
 
 docker image ls | grep php
 
-docker container run --name mini_php_container didierdefrance69/mini_php_app:1
-
-=====
-dans futures versions , peut être:
 
 docker container run --name mini_php_container -p 80:80 didierdefrance69/mini_php_app:1
 http://localhost:80 dans un navigateur web
+
+docker container stop mini_php_container
+docker container rm mini_php_container
